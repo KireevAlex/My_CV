@@ -1,0 +1,177 @@
+@import url(https://fonts.googleapis.com/css?family=Tenor+Sans:regular&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600&display=swap);
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+.wrapper {
+  overflow: hidden;
+  background-color: #c4c5c0;
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Tennor Sans";
+}
+
+._container {
+  margin: 15px auto;
+  max-width: 1087px;
+  padding: 0 15px;
+}
+@media (max-width: 1115px) {
+  ._container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 998px) {
+  ._container {
+    max-width: 767px;
+  }
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+}
+.header .header_menu {
+  padding: 0 10px;
+}
+.header .header_menu .menu_list {
+  display: flex;
+  min-height: 114px;
+  align-items: center;
+}
+.header .header_menu .menu_list .menu_items {
+  flex: 1 1 20%;
+  text-align: center;
+}
+.header .header_menu .menu_list .menu_items :hover {
+  background-color: #5d5d5b;
+  font-family: "Tennor Sans";
+}
+.header .header_menu .menu_list .menu_items .munu_link {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5%;
+  font-size: 20px;
+  letter-spacing: 125%;
+  /* 30/24 */
+  text-decoration: none;
+  color: inherit;
+  font-family: "Montserrat";
+  transition: all 0.5s ease 0s;
+}
+
+.main_container {
+  flex: 1 1 auto;
+  font-family: "Montserrat";
+  padding: 15px;
+}
+.main_container .blockAboutMe {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+}
+@media (max-width: 775px) {
+  .main_container .blockAboutMe {
+    flex-direction: column;
+  }
+}
+.main_container .blockAboutMe .block_foto {
+  order: 2;
+}
+.main_container .blockAboutMe .block_foto img {
+  width: 290px;
+  height: 350px;
+}
+.main_container .blockAboutMe .block_information .block_information_title {
+  padding: 0 0 15px 0;
+  line-height: 150%;
+  font-weight: 500;
+}
+.main_container .blockAboutMe .block_information .block_information_title h1 {
+  font-size: 24px;
+  padding: 0 0 5px 0;
+}
+.main_container .blockAboutMe .block_information .block_information_title h2 {
+  font-size: 18px;
+}
+.main_container .blockAboutMe .block_information .block_information_text * {
+  padding: 0 0 15px 0;
+}
+.main_container .blockAboutMe .block_information .block_information_text a {
+  color: inherit;
+  text-decoration: none;
+}
+.main_container .blockAboutMe .block_information .block_information_text a :hover {
+  text-decoration: underline;
+}
+.main_container .blockSummary {
+  margin: 10px;
+  border-bottom: 1px solid black;
+  padding: 0 10px 0 0;
+}
+@media (max-width: 775px) {
+  .main_container .blockSummary {
+    text-align: center;
+  }
+}
+.main_container .blockSummary h2 {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 0 10px 0;
+  box-sizing: border-box;
+}
+.main_container .blockSummary p {
+  line-height: 1.4;
+}
+.main_container .blockInformation {
+  display: flex;
+  margin: 10px;
+}
+@media (max-width: 1115px) {
+  .main_container .blockInformation {
+    max-width: 970px;
+  }
+}
+@media (max-width: 998px) {
+  .main_container .blockInformation {
+    display: block;
+    max-width: 767px;
+  }
+}
+@media (max-width: 775px) {
+  .main_container .blockInformation {
+    text-align: center;
+  }
+}
+.main_container .blockInformation ._title {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 0 10px 0;
+  box-sizing: border-box;
+}
+.main_container .blockInformation ._list {
+  line-height: 1.4;
+}
+.main_container .blockInformation .blockProf {
+  flex: 0 0 33.333%;
+}
+.main_container .blockInformation .blockExperiance {
+  flex: 0 0 33.333%;
+}
+.main_container .blockInformation .blockEducation {
+  flex: 0 0 33.333%;
+}
+.footer {
+  font-size: 14px;
+}/*# sourceMappingURL=index.css.map */
