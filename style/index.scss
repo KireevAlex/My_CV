@@ -39,44 +39,50 @@ body {
 
 // // HEADER---------------------------------
 .header {
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 10;
     display: none;
-
     // .header_container {
 
     .header_menu {
+
         padding: 0 10px;
 
         .menu_list {
             display: flex;
-            min-height: 114px;
+            min-height: 100px;
             align-items: center;
 
+            :hover {
+                background-color: $color5;
+                font-family: $fontT;
+            }
+            @media (max-width: 775px) {
+                display: block;
+            }
+            
             .menu_items {
                 flex: 1 1 20%;
                 text-align: center;
-
-                :hover {
-                    background-color: $color5;
-                    font-family: $fontT;
-                }
+                border: 1px solid #1a1a1a;
+                border-radius: 5px;
+                transition: all 0.5s ease 0s;
 
                 .munu_link {
-                    display: inline-block;
-                    padding: 5px 10px;
-                    border: 1px solid black;
-                    border-radius: 5%;
+                    padding: 5px 0px;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
                     font-size: 20px;
                     letter-spacing: 125%;
                     /* 30/24 */
                     text-decoration: none;
                     color: inherit;
                     font-family: $fontM;
-                    transition: all 0.5s ease 0s;
+                    
                 }
             }
         }
@@ -96,6 +102,7 @@ body {
         border-bottom: 1px solid black;
         @media (max-width: 775px) {
             flex-direction: column;
+            text-align: center;
         }
 
         .block_foto {
@@ -189,5 +196,8 @@ body {
     }
 }
 .footer{
-    font-size: 14px;
+    font-size: 12px;
+    .block_game{
+        color: inherit;
+    }
 }
