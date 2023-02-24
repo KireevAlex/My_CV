@@ -7,7 +7,7 @@ div#board {
   width: 1024px;
   height: 863;
   margin: auto;
-  background: url('pages/board.jpg') no-repeat;
+  background: url('Pages/board.jpg') no-repeat;
 }
 div#messageArea {
   position: absolute;
@@ -41,10 +41,10 @@ form input{
   border-radius: 10px;
 }
 .hit {
-  background: url('pages/ship.png') no-repeat center center;
+  background: url('Pages/ship.png') no-repeat center center;
 }
 .miss{
-  background: url('pages/miss.png') no-repeat center center ;
+  background: url('Pages/miss.png') no-repeat center center ;
 }
 .block_message{
   text-align: center;
